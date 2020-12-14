@@ -1,0 +1,11 @@
+{
+  "name": "magnus-carlsen-AI",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "mdrokz",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "ffi": "^2.3.0"
+  }
+}

@@ -1,0 +1,6 @@
+time xargs -n 1 curl < download.txt > socket
+nim c -d:release lib/nimrtl.nim
+nim c --app:lib write_html.nim
+grep -o -w -E  '[0-9]{1,7}' t.txt
+perl -ne 'print if /^(?!.*com).*(gid=.*)/' t.txt
+expr `wc -c t.txt | grep -o -w -E '[0-9]{1,7}'` / `wc -l t.txt | grep -o -w -E '[0-9]{1,7}'`

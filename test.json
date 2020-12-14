@@ -1,0 +1,1273 @@
+[
+ {
+  "children": [
+   {
+    "alt": "chessgames.com",
+    "border": "0",
+    "height": "60",
+    "src": "/chessimages/chessgameslogo.gif",
+    "style": "margin-left:-6px;",
+    "tag": "img",
+    "width": "431"
+   }
+  ],
+  "href": "/index.html",
+  "tag": "a"
+ },
+ {
+  "href": "/perl/chessmembers",
+  "tag": "a",
+  "text": "Members"
+ },
+ {
+  "href": "/perl/chessplayer?pid=52948",
+  "tag": "a",
+  "text": "Magnus Carlsen"
+ },
+ {
+  "href": "/perl/chessplayer?pid=154522",
+  "tag": "a",
+  "text": "Stefan Randjelovic"
+ },
+ {
+  "href": "/perl/chessopening?eco=A40",
+  "tag": "a",
+  "text": "(A40)"
+ },
+ {
+  "children": [
+   {
+    "style": "color:#0000ff;font-weight:bold;",
+    "tag": "font",
+    "text": "x"
+   }
+  ],
+  "id": "ab",
+  "onclick": "exitVariation();",
+  "tag": "a",
+  "text": "[ ]"
+ },
+ {
+  "children": [
+   {
+    "alt": "Click Here to play Guess-the-Move",
+    "border": "0",
+    "height": "31",
+    "src": "/chessimages/gtmlink.gif",
+    "tag": "img",
+    "width": "308"
+   }
+  ],
+  "href": "/perl/quiz?gid=1820394",
+  "tag": "a"
+ },
+ {
+  "href": "/perl/quiz?help=1",
+  "tag": "a",
+  "text": "what\u0026#39;s this?"
+ },
+ {
+  "href": "/perl/exploregame.pl?gid=1820394",
+  "tag": "a",
+  "text": "explore this opening"
+ },
+ {
+  "href": "/perl/chesslike.pl?gid=1820394",
+  "tag": "a",
+  "text": "find similar games"
+ },
+ {
+  "href": "/perl/chess.pl?pid=52948\u0026amp;pid2=154522",
+  "tag": "a",
+  "text": "3 more Carlsen/S Randjelovic games"
+ },
+ {
+  "href": "/pgn/carlsen_randjelovic_1999.pgn?gid=1820394",
+  "tag": "a",
+  "text": "download"
+ },
+ {
+  "href": "/chesshelp.html",
+  "tag": "a",
+  "text": "general"
+ },
+ {
+  "href": "/chesshelp.html#viewer",
+  "tag": "a",
+  "text": "What is this?"
+ },
+ {
+  "href": "/olgahelp.html",
+  "tag": "a",
+  "text": "Olga Chess Viewer Quickstart Guide"
+ },
+ {
+  "href": "https://www.chessgames.com/perl/analyzer.pl",
+  "tag": "a",
+  "text": "more info"
+ },
+ {
+  "border": "0",
+  "children": [
+   {
+    "alt": "Kibitzer\u0026#39;s Corner",
+    "height": "62",
+    "src": "/chessimages/kibitzers.jpg",
+    "tag": "img",
+    "width": "630"
+   }
+  ],
+  "name": "kibitzing",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "May-24-16"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=1",
+  "name": "reply1",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_613.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Tabanus",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "Tabanus"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Tabanus",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "May-24-16"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=2",
+  "name": "reply2",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_34.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=alexmagnus",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "alexmagnus"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=alexmagnus",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "May-24-16"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=3",
+  "name": "reply3",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_613.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Tabanus",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "Tabanus"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Tabanus",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "May-24-16"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=5",
+  "name": "reply5",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_34.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=alexmagnus",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "alexmagnus"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=alexmagnus",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "May-24-16"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=6",
+  "name": "reply6",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "Appaz"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Appaz",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "May-24-16"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=7",
+  "name": "reply7",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_613.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Tabanus",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "Tabanus"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Tabanus",
+  "tag": "a"
+ },
+ {
+  "href": "http://www.bergensjakk.no/",
+  "rel": "nofollow",
+  "tag": "a",
+  "text": "http://www.bergensjakk.no/"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "May-24-16"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=8",
+  "name": "reply8",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "Appaz"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Appaz",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "May-24-16"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=9",
+  "name": "reply9",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_613.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Tabanus",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "Tabanus"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Tabanus",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "May-24-16"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=10",
+  "name": "reply10",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "Appaz"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Appaz",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "Oct-02-16"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=11",
+  "name": "reply11",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_211.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=An+Englishman",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "An Englishman"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=An%20Englishman",
+  "tag": "a"
+ },
+ {
+  "href": "http://www.chessgames.com/perl/chessgame?gid=1820408\u0026amp;m=9",
+  "tag": "a",
+  "text": "Carlsen vs Jan Henrik Ytteborg, 2000"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "Oct-02-16"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=12",
+  "name": "reply12",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "Christoforus Polacco"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Christoforus%20Polacco",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "Oct-02-16"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=13",
+  "name": "reply13",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_613.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Tabanus",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "Tabanus"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Tabanus",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "Oct-10-17"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=15",
+  "name": "reply15",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "scholes"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=scholes",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "Oct-10-17"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=16",
+  "name": "reply16",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_34.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=alexmagnus",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "alexmagnus"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=alexmagnus",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "Sep-14-19"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=17",
+  "name": "reply17",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_1831.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Messiah",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "Messiah"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Messiah",
+  "tag": "a"
+ },
+ {
+  "href": "http://www.chessgames.com/perl/chessgame?gid=1282209",
+  "tag": "a",
+  "text": "Elsner vs E J Diemer, 1987"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "Sep-14-19"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=18",
+  "name": "reply18",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_2046.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=MissScarlett",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "MissScarlett"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=MissScarlett",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "Sep-14-19"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=19",
+  "name": "reply19",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_2046.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=MissScarlett",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "MissScarlett"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=MissScarlett",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "Sep-14-19"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=20",
+  "name": "reply20",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_1831.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Messiah",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "Messiah"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Messiah",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "Sep-14-19"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=21",
+  "name": "reply21",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_1831.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Messiah",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "Messiah"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Messiah",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "Sep-14-19"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=22",
+  "name": "reply22",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_000.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=beatgiant",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "beatgiant"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=beatgiant",
+  "tag": "a"
+ },
+ {
+  "href": "http://www.chessgames.com/perl/chessgame?gid=1128360",
+  "tag": "a",
+  "text": "Averbakh vs Spassky, 1956"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "Sep-14-19"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=23",
+  "name": "reply23",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_2046.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=MissScarlett",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "MissScarlett"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=MissScarlett",
+  "tag": "a"
+ },
+ {
+  "href": "http://www.chessgames.com/perl/chessgame?gid=1066901",
+  "tag": "a",
+  "text": "Saemisch vs Capablanca, 1929"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "Sep-14-19"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=24",
+  "name": "reply24",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_1709.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=keypusher",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "keypusher"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=keypusher",
+  "tag": "a"
+ },
+ {
+  "href": "http://www.chessgames.com/perl/chessgame?gid=1094853",
+  "tag": "a",
+  "text": "J Esser vs Marshall, 1911"
+ },
+ {
+  "href": "http://www.chessgames.com/perl/chessgame?gid=1908574\u0026amp;kpage=2#reply29",
+  "tag": "a",
+  "text": "Carlsen vs G Jones, 2018"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "Sep-14-19"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=25",
+  "name": "reply25",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_2046.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=MissScarlett",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "MissScarlett"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=MissScarlett",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "Sep-18-19"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=26",
+  "name": "reply26",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_1709.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=keypusher",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "keypusher"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=keypusher",
+  "tag": "a"
+ },
+ {
+  "href": "http://www.chessgames.com/perl/chessgame?gid=1139129",
+  "tag": "a",
+  "text": "Tal vs J I Zilber, 1949"
+ },
+ {
+  "children": [
+   {
+    "color": "#000000",
+    "tag": "font",
+    "text": "Sep-18-19"
+   }
+  ],
+  "href": "/perl/kibitzing?kid=G1820394\u0026amp;reply=27",
+  "name": "reply27",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "alt": "Premium Chessgames Member",
+    "border": "0",
+    "height": "48",
+    "src": "/av/face_2101.gif",
+    "tag": "img",
+    "width": "48"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Sally+Simpson",
+  "tag": "a"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "Sally Simpson"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=Sally%20Simpson",
+  "tag": "a"
+ },
+ {
+  "href": "http://www.chessgames.com/perl/chessgame?gid=1125883",
+  "tag": "a",
+  "text": "Smyslov vs Tal, 1959"
+ },
+ {
+  "children": [
+   {
+    "border": "0",
+    "height": "170",
+    "src": "/fen/5321/3r2k1_5pp1_7p_5q2_1P2p3_P5Q1_1B3P2_2R2K2.gif",
+    "tag": "img",
+    "width": "170"
+   },
+   {
+    "tag": "br"
+   },
+   {
+    "face": "georgia",
+    "size": "-2",
+    "tag": "font",
+    "text": "click for larger view"
+   }
+  ],
+  "href": "javascript:OpenWin(\u0026#39;/perl/fen?fen=3r2k1/5pp1/7p/5q2/1P2p3/P5Q1/1B3P2/2R2K2+b+-+-+0+33\u0026#39;)",
+  "tag": "a"
+ },
+ {
+  "href": "/perl/chessprofile.pl",
+  "tag": "a",
+  "text": "Create an account"
+ },
+ {
+  "children": [
+   {
+    "alt": "Blow the Whistle",
+    "border": "0",
+    "height": "54",
+    "src": "/chessimages/whistle.gif",
+    "tag": "img",
+    "width": "54"
+   }
+  ],
+  "href": "/perl/whistle?kid=G1820394",
+  "tag": "a"
+ },
+ {
+  "href": "/perl/whistle?kid=G1820394",
+  "tag": "a",
+  "text": "Blow the whistle"
+ },
+ {
+  "href": "/perl/chessforum.pl",
+  "tag": "a",
+  "text": "Kibitzer\u0026#39;s Café"
+ },
+ {
+  "href": "/perl/chesscorrection.pl?type=G\u0026amp;key=1820394",
+  "tag": "a",
+  "text": "correction slip"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "color": "#663300",
+      "tag": "font",
+      "text": "Click here"
+     }
+    ],
+    "tag": "u"
+   }
+  ],
+  "href": "javascript:OpenWin(\u0026#34;/perl/editornotes?kid=G1820394\u0026#34;)",
+  "tag": "a"
+ },
+ {
+  "href": "/chesshelp.html#collections",
+  "tag": "a",
+  "text": "what is this?"
+ },
+ {
+  "href": "/perl/chesscollection?cid=1029701",
+  "tag": "a",
+  "text": "Englund Gambit Complex: General"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "MKD"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=MKD",
+  "tag": "a"
+ },
+ {
+  "href": "/perl/chesscollection?cid=1038457",
+  "tag": "a",
+  "text": "The slightly overburdened child"
+ },
+ {
+  "children": [
+   {
+    "children": [
+     {
+      "tag": "u",
+      "text": "whiteshark"
+     }
+    ],
+    "color": "#000000",
+    "tag": "font"
+   }
+  ],
+  "href": "/perl/chessuser?uname=whiteshark",
+  "tag": "a"
+ },
+ {
+  "href": "/index.html",
+  "tag": "a",
+  "text": "Home"
+ }
+]
