@@ -45,9 +45,82 @@ async fn main() {
         .await
         .expect("failed to connect");
 
-    c.goto("https://chessgames.com/perl/chessgame?gid=1394457").await.expect("failed to navigate");
+    c.goto("https://chessgames.com/perl/chessgame?gid=1394457")
+        .await
+        .expect("failed to navigate");
 
-    
+    let play_button = c
+        .find(Locator::Id("nextB"))
+        .await
+        .expect("could not find play button");
+
+    let mut board = c
+        .find(Locator::Css(".board-b72b1"))
+        .await
+        .expect("failed to find chess board")
+        .find_all(Locator::Css("div[class^=row"))
+        .await
+        .expect("failed to find rows");
+
+    let mut count = 0;
+
+    play_button.click().await.expect("failed to click");
+
+    let board_len = board.len();
+
+    let mut fen_string = String::new();
+
+    for (index, b) in board.iter_mut().enumerate() {
+        let squares = b
+            .find_all(Locator::Css("div[class^=square]"))
+            .await
+            .expect("failed to fetch find squares");
+
+        println!("square len {}", squares.len());
+
+        for mut square in squares {
+            match square.find(Locator::Css("img")).await {
+                Ok(mut img) => {
+                    if count > 0 {
+                        fen_string.push_str(&count.to_string())
+                    }
+                    count = 0;
+
+                    fen_string.push_str(
+                        &img.attr("data-piece")
+                            .await
+                            .unwrap()
+                            .unwrap()
+                            // .replace("b", "")
+                            // .replace("w", ""),
+                    )
+                }
+                Err(e) => {
+                    count = count + 1;
+                }
+            }
+        }
+        if count > 0 {
+            fen_string.push_str(&count.to_string())
+        }
+        count = 0;
+        if index != board_len {
+            fen_string.push_str("/");
+        }
+        // for mut im in img {
+        // println!("html {}",im.html(false).await.expect("msg"));
+        // }
+    }
+
+    println!("FEN {}", fen_string);
+
+    // for _ in 0..86 {
+    //     let p = play_button.clone();
+
+    //     p.click().await.expect("failed to click");
+    // }
+
+    std::thread::sleep(std::time::Duration::from_millis(10000));
 
     c.close().await.expect("failed to close");
 
