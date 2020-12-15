@@ -1,4 +1,4 @@
-use fantoccini::{Client, Locator};
+use fantoccini::{Client, Element, Locator};
 
 use std::process::Command;
 
@@ -37,6 +37,53 @@ macro_rules! exec {
     };
 }
 
+async fn generate_fen_string(mut board: Vec<Element>) {
+    let mut count = 0;
+
+    let board_len = board.len();
+
+    let mut fen_string = String::new();
+
+    for (index, b) in board.iter_mut().enumerate() {
+        let squares = b
+            .find_all(Locator::Css("div[class^=square]"))
+            .await
+            .expect("failed to fetch find squares");
+
+        for mut square in squares {
+            match square.find(Locator::Css("img")).await {
+                Ok(mut img) => {
+                    if count > 0 {
+                        fen_string.push_str(&count.to_string())
+                    }
+                    count = 0;
+
+                    let data_piece = img.attr("data-piece").await.unwrap().unwrap();
+
+                    if data_piece.contains('b') {
+                        let piece_str = data_piece.replace('b', "").to_lowercase();
+                        fen_string.push_str(&piece_str);
+                    } else if data_piece.contains('w') {
+                        fen_string.push_str(&data_piece.replace('w', ""));
+                    }
+                }
+                Err(_) => {
+                    count = count + 1;
+                }
+            }
+        }
+        if count > 0 {
+            fen_string.push_str(&count.to_string())
+        }
+        count = 0;
+        if index != board_len {
+            fen_string.push_str("/");
+        }
+    }
+
+    println!("FEN {}", fen_string);
+}
+
 #[tokio::main]
 async fn main() {
     spawn!("geckodriver");
@@ -54,71 +101,22 @@ async fn main() {
         .await
         .expect("could not find play button");
 
-    let mut board = c
-        .find(Locator::Css(".board-b72b1"))
-        .await
-        .expect("failed to find chess board")
-        .find_all(Locator::Css("div[class^=row"))
-        .await
-        .expect("failed to find rows");
+    for _ in 0..86 {
 
-    let mut count = 0;
-
-    play_button.click().await.expect("failed to click");
-
-    let board_len = board.len();
-
-    let mut fen_string = String::new();
-
-    for (index, b) in board.iter_mut().enumerate() {
-        let squares = b
-            .find_all(Locator::Css("div[class^=square]"))
+        let board = c
+            .find(Locator::Css(".board-b72b1"))
             .await
-            .expect("failed to fetch find squares");
+            .expect("failed to find chess board")
+            .find_all(Locator::Css("div[class^=row"))
+            .await
+            .expect("failed to find rows");
 
-        println!("square len {}", squares.len());
+        generate_fen_string(board).await;
 
-        for mut square in squares {
-            match square.find(Locator::Css("img")).await {
-                Ok(mut img) => {
-                    if count > 0 {
-                        fen_string.push_str(&count.to_string())
-                    }
-                    count = 0;
+        let p = play_button.clone();
 
-                    fen_string.push_str(
-                        &img.attr("data-piece")
-                            .await
-                            .unwrap()
-                            .unwrap()
-                            // .replace("b", "")
-                            // .replace("w", ""),
-                    )
-                }
-                Err(e) => {
-                    count = count + 1;
-                }
-            }
-        }
-        if count > 0 {
-            fen_string.push_str(&count.to_string())
-        }
-        count = 0;
-        if index != board_len {
-            fen_string.push_str("/");
-        }
-        // for mut im in img {
-        // println!("html {}",im.html(false).await.expect("msg"));
-        // }
+        p.click().await.expect("failed to click");
     }
-
-    println!("FEN {}", fen_string);
-
-    // for _ in 0..86 {
-    //     let p = play_button.clone();
-
-    //     p.click().await.expect("failed to click");
-    // }
 
     std::thread::sleep(std::time::Duration::from_millis(10000));
 
@@ -126,5 +124,5 @@ async fn main() {
 
     exec!("sudo", "fuser", "-k", "4444/tcp");
 
-    println!("Hello, world!");
+    println!("Scraper, Ended!");
 }
