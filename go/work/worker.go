@@ -3,12 +3,11 @@ package main
 import (
 	"fmt"
 	"log"
-	"net/http"
 	"runtime"
 	"sync"
 )
 
-const Limit = 100
+const Limit = 60
 
 func main() {
 	log.SetFlags(log.Ltime) // format log output hh:mm:ss
@@ -19,23 +18,23 @@ func main() {
 	doWork := func(i int, j string) {
 		// time.Sleep(2 * time.Second)
 
-		client := &http.Client{}
+		// client := &http.Client{}
 
-		req, err := http.NewRequest("GET", "https://www.google.com", nil)
+		// req, err := http.NewRequest("GET", "https://www.google.com", nil)
 
-		handleError(err)
+		// handleError(err)
 
-		res, err := client.Do(req)
+		// res, err := client.Do(req)
 
-		handleError(err)
+		// handleError(err)
 
-		if res.StatusCode != 200 {
-			fmt.Printf("status code error: %d %s", res.StatusCode, res.Status)
-		}
+		// if res.StatusCode != 200 {
+		// 	fmt.Printf("status code error: %d %s", res.StatusCode, res.Status)
+		// }
 
-		defer res.Body.Close()
+		// defer res.Body.Close()
 
-		fmt.Println("test", i)
+		fmt.Println("test", i) 🇬🇧
 	}
 
 	for worker := 0; worker < Limit; worker++ {
@@ -50,7 +49,7 @@ func main() {
 		}(worker)
 	}
 
-	for j := 0; j < 100; j++ {
+	for j := 0; j < 200; j++ {
 		// work := string(rune(97 + j))
 
 		log.Printf("Work %s enqueued\n", "2323")
