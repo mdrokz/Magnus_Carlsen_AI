@@ -2,10 +2,9 @@ use std::{
     marker::PhantomData,
     mem::{self, ManuallyDrop},
     ops::Deref,
-    sync::{Arc},
+    sync::Arc,
     task::{RawWaker, RawWakerVTable, Wake, Waker},
 };
-
 
 #[derive(Debug)]
 pub struct WakerRef<'a> {

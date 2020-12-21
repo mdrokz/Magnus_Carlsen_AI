@@ -1,10 +1,16 @@
 #![feature(wake_trait)]
+#![feature(async_closure)]
 
 use fantoccini::{Client, Element, Locator};
-use fs::write;
-use tokio::runtime::Runtime;
 
-use std::process::Command;
+use fs::write;
+
+use std::{
+    cell::RefCell,
+    process::Command,
+    sync::atomic::AtomicPtr,
+    sync::{Arc, Mutex},
+};
 
 use std::str;
 
@@ -12,12 +18,13 @@ use serde_json::json;
 
 use std::fs;
 
-
 mod executor;
 
 mod waker;
 
-use crate::executor::{Executor,Spawner,new_executor_and_spawner};
+use crate::executor::{new_executor_and_spawner, Executor, Spawner};
+
+// use async_std::task;
 
 macro_rules! spawn {
 
@@ -52,7 +59,7 @@ macro_rules! exec {
     };
 }
 
-async fn generate_fen_string(mut board: Vec<Element>) -> String {
+async fn generate_fen_string<'a>(mut board: Vec<Element>) -> String {
     let mut count = 0;
 
     let board_len = board.len();
@@ -60,8 +67,9 @@ async fn generate_fen_string(mut board: Vec<Element>) -> String {
     let mut fen_string = String::new();
 
     for (index, b) in board.iter_mut().enumerate() {
+
         let squares = b
-            .find_all(Locator::Css("div[class^=square]"))
+            .find_all(Locator::Css("div"))
             .await
             .expect("failed to fetch find squares");
 
@@ -100,130 +108,60 @@ async fn generate_fen_string(mut board: Vec<Element>) -> String {
         }
     }
 
+    //     println!("FEN {}", fen_string);
+
     fen_string
 }
-
 #[tokio::main]
 async fn main() {
     spawn!("geckodriver");
-
-    // let mut c = Client::new("http://localhost:4444")
-    //     .await
-    //     .expect("failed to connect");
+    
     let mut fen_strings: Vec<String> = Vec::new();
 
-    let (executor, spawner): (Executor<i32>,Spawner<i32>) = new_executor_and_spawner();
+
+    let mut c = Client::new("http://localhost:4444")
+        .await
+        .expect("failed to connect");
+
+    c.goto("https://chessgames.com/perl/chessgame?gid=1394457")
+        .await
+        .expect("failed to navigate");
+
+    let play_button = c
+        .find(Locator::Id("nextB"))
+        .await
+        .expect("could not find play button");
 
 
-    spawner.spawn(async {
-        32
-    });
+    for _ in 0..86 {
+        let p = play_button.clone();
 
-    spawner.spawn(async {
-        32
-    });
+        let board = c
+            .find(Locator::Css(".board-b72b1"))
+            .await
+            .expect("failed to find chess board")
+            .find_all(Locator::Css("div[class^=row"))
+            .await
+            .expect("failed to find rows");
 
-    spawner.spawn(async {
-        32
-    });
+        fen_strings.push(generate_fen_string(board.clone()).await);    
 
-    spawner.spawn(async {
-        32
-    });
+        p.click().await.expect("failed to click");
+    }
 
-    
-    drop(spawner);
-    
+    write(
+        "./moves.json",
+        json!({
+            "title": "Magnus Carlsen vs T",
+            "moves": fen_strings
+        })
+        .to_string()
+        .as_bytes(),
+    )
+    .unwrap();
 
-    executor.run();
 
-    // for _ in 0..3 {
-    //     c.new_window(false).await.unwrap();
-    // }
-
-    // c.goto("https://chessgames.com/perl/chessgame?gid=1394457")
-    //     .await
-    //     .expect("failed to navigate");
-
-    // let play_button = c
-    //     .find(Locator::Id("nextB"))
-    //     .await
-    //     .expect("could not find play button");
-
-    // for _ in 0..86 {
-    //     let p = play_button.clone();
-
-    //     let mut rt = Runtime::new().unwrap();
-
-    //     rt.block_on(async {
-    //         let board = c
-    //         .find(Locator::Css(".board-b72b1"))
-    //         .await
-    //         .expect("failed to find chess board")
-    //         .find_all(Locator::Css("div[class^=row"))
-    //         .await
-    //         .expect("failed to find rows");
-    //         fen_strings.push(generate_fen_string(board).await);
-    //     });
-        
-    //     p.click().await.expect("failed to click");
-    // }
-
-    // write(
-    //     "./moves.json",
-    //     json!({
-    //         "title": "Magnus Carlsen vs T",
-    //         "moves": fen_strings
-    //     })
-    //     .to_string()
-    //     .as_bytes(),
-    // )
-    // .unwrap();
-
-    // println!("Fen Strings {:?}", fen_strings);
-
-    // c.close_window().await.unwrap();
-
-    // for window_name in c.windows().await.unwrap() {
-    //     println!("name: {}", window_name.0);
-
-    //     c.switch_to_window(window_name)
-    //         .await
-    //         .expect("failed to switch");
-
-    //     c.goto("https://chessgames.com/perl/chessgame?gid=1394457")
-    //         .await
-    //         .expect("failed to navigate");
-
-    //     let play_button = c
-    //         .find(Locator::Id("nextB"))
-    //         .await
-    //         .expect("could not find play button");
-
-    //     for _ in 0..86 {
-    //         let board = c
-    //             .find(Locator::Css(".board-b72b1"))
-    //             .await
-    //             .expect("failed to find chess board")
-    //             .find_all(Locator::Css("div[class^=row"))
-    //             .await
-    //             .expect("failed to find rows");
-
-    //         generate_fen_string(board).await;
-
-    //         let p = play_button.clone();
-
-    //         p.click().await.expect("failed to click");
-    //     }
-
-    //     c.close_window().await.unwrap();
-
-    //     c.new_window(false).await.unwrap();
-    // }
-
-    // c.switch_to_window(window)
-
-    // c.close().await.expect("failed to close");
+    c.close().await.expect("failed to close window");
 
     exec!("sudo", "fuser", "-k", "4444/tcp");
 
